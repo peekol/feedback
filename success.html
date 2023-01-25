@@ -1,0 +1,78 @@
+<html>
+<head>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.4/tailwind.min.css">
+  <!--<link rel="stylesheet" type="text/css" href="https://codepen.io/username/pen/aBcDef.css">-->
+</head>
+
+<!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+     =======================================================================
+ -->
+ 
+<body>
+  <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto">
+      <div class=" max-w-3xl mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="text-center">
+        <!--<div class="flex flex-col items-center justify-center text-center rounded-md"><svg width="100" height="100" class="text-green-500 dark:text-green-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M26.6666 50L46.6666 66.6667L73.3333 33.3333M50 96.6667C43.8716 96.6667 37.8033 95.4596 32.1414 93.1144C26.4796 90.7692 21.3351 87.3317 17.0017 82.9983C12.6683 78.6649 9.23082 73.5204 6.8856 67.8586C4.54038 62.1967 3.33331 56.1283 3.33331 50C3.33331 43.8716 4.54038 37.8033 6.8856 32.1414C9.23082 26.4796 12.6683 21.3351 17.0017 17.0017C21.3351 12.6683 26.4796 9.23084 32.1414 6.88562C37.8033 4.5404 43.8716 3.33333 50 3.33333C62.3767 3.33333 74.2466 8.24998 82.9983 17.0017C91.75 25.7534 96.6666 37.6232 96.6666 50C96.6666 62.3768 91.75 74.2466 82.9983 82.9983C74.2466 91.75 62.3767 96.6667 50 96.6667Z" stroke="currentColor" stroke-width="3"></path></svg><h3 class="text-2xl text-green-500 dark:text-green-300 pt-7">Feedback został wysłany!</h3><p class="max-w-md pt-3 text-gray-500 dark:text-gray-300 md:px-3">Thank you! The form has been submitted successfully. We will reply to you soon!</p><div class="text-center"></div></div>-->  
+          <h1 class="my-3 text-3xl font-semibold text-green-500 dark:text-green-300">
+            Feedback został wysłany!
+          </h1>
+          <svg width="100" height="100" class="text-green-500 dark:text-green-300 mx-auto my-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26.6666 50L46.6666 66.6667L73.3333 33.3333M50 96.6667C43.8716 96.6667 37.8033 95.4596 32.1414 93.1144C26.4796 90.7692 21.3351 87.3317 17.0017 82.9983C12.6683 78.6649 9.23082 73.5204 6.8856 67.8586C4.54038 62.1967 3.33331 56.1283 3.33331 50C3.33331 43.8716 4.54038 37.8033 6.8856 32.1414C9.23082 26.4796 12.6683 21.3351 17.0017 17.0017C21.3351 12.6683 26.4796 9.23084 32.1414 6.88562C37.8033 4.5404 43.8716 3.33333 50 3.33333C62.3767 3.33333 74.2466 8.24998 82.9983 17.0017C91.75 25.7534 96.6666 37.6232 96.6666 50C96.6666 62.3768 91.75 74.2466 82.9983 82.9983C74.2466 91.75 62.3767 96.6667 50 96.6667Z" stroke="currentColor" stroke-width="3"></path>
+          </svg>
+          <p class="text-gray-400 dark:text-gray-400">
+            Może jeszcze komuś chcesz dać feedback?
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="3338be5d-6665-451e-8395-4cbfa0c7c89d" />
+            <input type="hidden" name="subject" value="Feedback od kogoś z zespołu UX" />
+            <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            <!-- <div class="mb-6"> -->
+              <!-- <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label> -->
+              <!-- <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /> -->
+            <!-- </div> -->
+            <!-- <div class="mb-6"> -->
+              <!-- <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label> -->
+              <!-- <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /> -->
+            <!-- </div> -->
+            <nav class="flex justify-center space-x-4">
+              <a href="#" class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-white bg-indigo-500">Agata</a>
+              <a href="agn.html"   class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-slate-700 ">Agnieszka</a>
+              <a href="iry.html"   class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-slate-700 ">Iryna</a>
+              <a href="mac.html"   class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-slate-700 ">Maciek</a>
+              <a href="pio.html"   class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-slate-700 ">Piotrek</a>
+              <a href="syl.html"   class="font-semibold px-3 py-2 rounded-md dark:text-gray-200 text-slate-700 ">Sylwia</a>
+            </nav>
+            <!-- <div class="mb-6"> -->
+              <!-- <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Komu chcesz dać feedback?</label> -->
+              <!-- <input type="text" name="phone" id="phone" placeholder="Agata, Agnieszka, Iryna, Sylwia, Maciek, Piotrek?" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /> -->
+            <!-- </div> -->
+            <div class="mb-6 my-10">
+              <!-- <label for="feedback" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Co masz do przekazania?</label> -->
+              <textarea rows="5" name="feedback" id="feedback" placeholder="Co masz do przekazania Agacie?" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Wyślij
+              </button>
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
